@@ -1,0 +1,11 @@
+C:\Projectos\GestorDeVentas\SistemaVentas\bin\Debug\SistemaVentas.exe.config
+C:\Projectos\GestorDeVentas\SistemaVentas\bin\Debug\SistemaVentas.exe
+C:\Projectos\GestorDeVentas\SistemaVentas\bin\Debug\SistemaVentas.pdb
+C:\Projectos\GestorDeVentas\SistemaVentas\obj\Debug\SistemaVentas.csprojAssemblyReference.cache
+C:\Projectos\GestorDeVentas\SistemaVentas\obj\Debug\SistemaVentas.Form1.resources
+C:\Projectos\GestorDeVentas\SistemaVentas\obj\Debug\SistemaVentas.Presentacion.FrmClientes.resources
+C:\Projectos\GestorDeVentas\SistemaVentas\obj\Debug\SistemaVentas.Properties.Resources.resources
+C:\Projectos\GestorDeVentas\SistemaVentas\obj\Debug\SistemaVentas.csproj.GenerateResource.cache
+C:\Projectos\GestorDeVentas\SistemaVentas\obj\Debug\SistemaVentas.csproj.CoreCompileInputs.cache
+C:\Projectos\GestorDeVentas\SistemaVentas\obj\Debug\SistemaVentas.exe
+C:\Projectos\GestorDeVentas\SistemaVentas\obj\Debug\SistemaVentas.pdb
