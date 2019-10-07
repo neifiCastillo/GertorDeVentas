@@ -117,16 +117,16 @@
             // 
             this.CmbBuscar.FormattingEnabled = true;
             this.CmbBuscar.Items.AddRange(new object[] {
-            "NombreCliente",
-            "ApellidoCliente",
+            "Nombre",
+            "Apellido",
             "Dni",
             "Telefono",
-            "DireccionCliente"});
+            "Direccion"});
             this.CmbBuscar.Location = new System.Drawing.Point(6, 28);
             this.CmbBuscar.Name = "CmbBuscar";
             this.CmbBuscar.Size = new System.Drawing.Size(152, 23);
             this.CmbBuscar.TabIndex = 1;
-            this.CmbBuscar.Text = "NombreCliente";
+            this.CmbBuscar.Text = "Nombre";
             // 
             // GridCliente
             // 
