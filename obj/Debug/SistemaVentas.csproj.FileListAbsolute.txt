@@ -9,3 +9,6 @@ C:\Projectos\GestorDeVentas\SistemaVentas\obj\Debug\SistemaVentas.csproj.Generat
 C:\Projectos\GestorDeVentas\SistemaVentas\obj\Debug\SistemaVentas.csproj.CoreCompileInputs.cache
 C:\Projectos\GestorDeVentas\SistemaVentas\obj\Debug\SistemaVentas.exe
 C:\Projectos\GestorDeVentas\SistemaVentas\obj\Debug\SistemaVentas.pdb
+C:\Projectos\GestorDeVentas\SistemaVentas\obj\Debug\SistemaVentas.Presentacion.FrmCategoria.resources
+C:\Projectos\GestorDeVentas\SistemaVentas\obj\Debug\SistemaVentas.Presentacion.FrmProducto.resources
+C:\Projectos\GestorDeVentas\SistemaVentas\obj\Debug\SistemaVentas.Presentacion.FrmVenta.resources

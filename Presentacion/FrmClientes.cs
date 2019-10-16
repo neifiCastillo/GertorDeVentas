@@ -111,6 +111,11 @@ namespace SistemaVentas.Presentacion
             
         }
 
+        internal void SetFlag(string Band)
+        {
+            txtFlag.Text = Band;
+        }
+
         public string ValidarDatos()
         {
             string Resultado = "";
@@ -250,6 +255,27 @@ namespace SistemaVentas.Presentacion
             {
                 MessageBox.Show(ex.Message + ex.StackTrace);
 
+            }
+
+        }
+
+        private void GridCliente_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            if (txtFlag.Text == "1")
+            {
+
+
+                FrmVenta frmVentas = FrmVenta.GetInscance();
+
+                if (GridCliente.CurrentRow != null)
+                {
+                    frmVentas.SetCliente(GridCliente.CurrentRow.Cells[1].Value.ToString(), GridCliente.CurrentRow.Cells[2].Value.ToString());
+                    frmVentas.Show();
+                    Close();
+
+
+                }
             }
 
         }
