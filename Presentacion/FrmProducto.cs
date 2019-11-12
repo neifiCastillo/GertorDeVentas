@@ -29,6 +29,12 @@ namespace SistemaVentas.Presentacion
             return _instancia;
         }
 
+        public void SetFlag(string sValor)
+        {
+            txtFlag.Text = sValor;
+
+        }
+
         public void SetCategoria(string id , string descripcion)
         {
             txtCategoriaId.Text = id;
@@ -322,8 +328,29 @@ namespace SistemaVentas.Presentacion
 
         }
 
-       
+        private void GridProducto_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
 
-        
+            if (txtFlag.Text == "1")
+            {
+
+
+                FrmDetalleVenta frmDetVentas = FrmDetalleVenta.GetInstance();
+
+                if (GridProducto.CurrentRow != null)
+                {
+                    Producto producto = new Producto();
+                    producto.Id = Convert.ToInt32(GridProducto.CurrentRow.Cells["Id"].Value.ToString());
+                    producto.Nombre = GridProducto.CurrentRow.Cells["Nombre"].Value.ToString();
+                    producto.Stock = Convert.ToDouble(GridProducto.CurrentRow.Cells["Stock"].Value.ToString());
+                    producto.PrecioVenta = Convert.ToDouble(GridProducto.CurrentRow.Cells["PrecioVenta"].Value.ToString());
+                    frmDetVentas.SetProducto(producto);
+                    frmDetVentas.Show();
+                    Close();
+
+
+                }
+            }
+        }
     }
 }

@@ -64,6 +64,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.dialogo = new System.Windows.Forms.OpenFileDialog();
+            this.txtFlag = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.GridProducto)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -283,6 +284,7 @@
             this.GridProducto.TabIndex = 0;
             this.GridProducto.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridProducto_CellClick);
             this.GridProducto.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridProducto_CellContentClick);
+            this.GridProducto.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridProducto_CellDoubleClick);
             // 
             // Eliminar
             // 
@@ -313,6 +315,7 @@
             this.groupBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBox2.Controls.Add(this.txtFechaVencimiento);
             this.groupBox2.Controls.Add(this.Imagen);
+            this.groupBox2.Controls.Add(this.txtCategoriaId);
             this.groupBox2.Controls.Add(this.lbllid);
             this.groupBox2.Controls.Add(this.BtnBuscarCategoria);
             this.groupBox2.Controls.Add(this.BtnCancelar);
@@ -328,7 +331,6 @@
             this.groupBox2.Controls.Add(this.txtNombre);
             this.groupBox2.Controls.Add(this.textBox2);
             this.groupBox2.Controls.Add(this.txtCategoriaDescripcion);
-            this.groupBox2.Controls.Add(this.txtCategoriaId);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.label6);
@@ -442,6 +444,14 @@
             // 
             this.dialogo.FileName = "openFileDialog1";
             // 
+            // txtFlag
+            // 
+            this.txtFlag.Location = new System.Drawing.Point(298, 0);
+            this.txtFlag.Name = "txtFlag";
+            this.txtFlag.Size = new System.Drawing.Size(40, 20);
+            this.txtFlag.TabIndex = 1;
+            this.txtFlag.Visible = false;
+            // 
             // FrmProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -449,6 +459,7 @@
             this.ClientSize = new System.Drawing.Size(1117, 657);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.txtFlag);
             this.Name = "FrmProducto";
             this.Text = "Mantenimiento de Producto";
             this.Load += new System.EventHandler(this.FrmProducto_Load);
@@ -459,6 +470,7 @@
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Imagen)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -500,5 +512,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DateTimePicker txtFechaVencimiento;
         private System.Windows.Forms.OpenFileDialog dialogo;
+        private System.Windows.Forms.TextBox txtFlag;
     }
 }

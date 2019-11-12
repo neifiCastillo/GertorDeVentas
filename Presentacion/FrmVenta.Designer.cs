@@ -229,6 +229,7 @@
             this.GridVentas.TabIndex = 0;
             this.GridVentas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridVentas_CellClick);
             this.GridVentas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridVentas_CellContentClick);
+            this.GridVentas.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridVentas_CellDoubleClick);
             // 
             // Eliminar
             // 

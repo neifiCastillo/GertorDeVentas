@@ -12,3 +12,4 @@ C:\Projectos\GestorDeVentas\SistemaVentas\obj\Debug\SistemaVentas.pdb
 C:\Projectos\GestorDeVentas\SistemaVentas\obj\Debug\SistemaVentas.Presentacion.FrmCategoria.resources
 C:\Projectos\GestorDeVentas\SistemaVentas\obj\Debug\SistemaVentas.Presentacion.FrmProducto.resources
 C:\Projectos\GestorDeVentas\SistemaVentas\obj\Debug\SistemaVentas.Presentacion.FrmVenta.resources
+C:\Projectos\GestorDeVentas\SistemaVentas\obj\Debug\SistemaVentas.Presentacion.FrmDetalleVenta.resources
