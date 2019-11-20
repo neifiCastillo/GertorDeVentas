@@ -39,7 +39,7 @@ namespace SistemaVentas.Presentacion
 
         internal void SetProducto(Producto producto)
         {
-
+            
             txtProductoId.Text = producto.Id.ToString();
             txtProductoDescripcion.Text = producto.Nombre;
             txtStock.Text = producto.Stock.ToString();
@@ -50,8 +50,8 @@ namespace SistemaVentas.Presentacion
 
         internal void Setventa(Venta venta)
         {
-            
-            txtVentaId.Text = venta.Cliente.Id.ToString();
+            lbVentaId.Text = venta.Id.ToString();
+            txtClienteId.Text = venta.Cliente.Id.ToString();
             txtClienteNombre.Text = venta.Cliente.Nombre;
             txtFecha.Text = venta.FechaVenta.ToShortDateString();
             cmbTipoDoc.Text = venta.TipoDocumento;
@@ -67,7 +67,7 @@ namespace SistemaVentas.Presentacion
                 {
 
                         DetalleVenta detVenta = new DetalleVenta();
-                        detVenta.Venta.Id = Convert.ToInt32(txtVentaId.Text);
+                        detVenta.Venta.Id = Convert.ToInt32(lbVentaId.Text);
                         detVenta.Producto.Id = Convert.ToInt32(txtProductoId.Text);
                         detVenta.Cantidad = Convert.ToDouble(txtCantidad.Text);
                         detVenta.PrecioUnitario = Convert.ToDouble(txtPrecioUnitario.Text);
@@ -133,7 +133,7 @@ namespace SistemaVentas.Presentacion
         {
             try
             {
-                DataSet ds = FDetalleVenta.GetAll(Convert.ToInt32(txtVentaId.Text));
+                DataSet ds = FDetalleVenta.GetAll(Convert.ToInt32(lbVentaId.Text));
                 dt = ds.Tables[0];
                 GridVentas.DataSource = dt;
                 GridVentas.Columns["VentaId"].Visible = false;
@@ -215,6 +215,13 @@ namespace SistemaVentas.Presentacion
                 MessageBox.Show(ex.Message + ex.StackTrace);
 
             }
+        }
+
+        private void BtnImprimir_Click(object sender, EventArgs e)
+        {
+            FrmReporteVenta frmRepVenta = new FrmReporteVenta();
+            frmRepVenta.SetVentaId(Convert.ToInt32(lbVentaId.Text));
+            frmRepVenta.ShowDialog();
         }
     }
 }

@@ -54,6 +54,8 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.txtClienteNombre = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.lblUsuario = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.GridVentas)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -240,6 +242,8 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.groupBox1.Controls.Add(this.lblUsuario);
+            this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.LblDatosNoEncontrados);
             this.groupBox1.Controls.Add(this.txtBuscar);
@@ -247,9 +251,9 @@
             this.groupBox1.Controls.Add(this.GridVentas);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.Black;
-            this.groupBox1.Location = new System.Drawing.Point(388, 3);
+            this.groupBox1.Location = new System.Drawing.Point(388, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(772, 414);
+            this.groupBox1.Size = new System.Drawing.Size(772, 439);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Listado de Ventas";
@@ -277,9 +281,9 @@
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.Black;
-            this.groupBox2.Location = new System.Drawing.Point(2, 3);
+            this.groupBox2.Location = new System.Drawing.Point(2, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(380, 414);
+            this.groupBox2.Size = new System.Drawing.Size(380, 447);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos de Venta";
@@ -301,7 +305,7 @@
             this.txtFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.txtFecha.Location = new System.Drawing.Point(79, 133);
             this.txtFecha.Name = "txtFecha";
-            this.txtFecha.Size = new System.Drawing.Size(194, 21);
+            this.txtFecha.Size = new System.Drawing.Size(245, 21);
             this.txtFecha.TabIndex = 4;
             // 
             // BtnBuscarCliente
@@ -337,11 +341,28 @@
             this.txtClienteNombre.Size = new System.Drawing.Size(199, 21);
             this.txtClienteNombre.TabIndex = 1;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(492, 405);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(61, 15);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Usuario:";
+            // 
+            // lblUsuario
+            // 
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Location = new System.Drawing.Point(553, 405);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(0, 15);
+            this.lblUsuario.TabIndex = 5;
+            // 
             // FrmVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1163, 419);
+            this.ClientSize = new System.Drawing.Size(1163, 453);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Name = "FrmVenta";
@@ -384,5 +405,7 @@
         private System.Windows.Forms.TextBox txtClienteNombre;
         private System.Windows.Forms.ComboBox cmbTipoDoc;
         private System.Windows.Forms.DateTimePicker txtFecha;
+        private System.Windows.Forms.Label lblUsuario;
+        private System.Windows.Forms.Label label6;
     }
 }

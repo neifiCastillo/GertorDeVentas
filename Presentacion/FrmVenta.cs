@@ -48,6 +48,9 @@ namespace SistemaVentas.Presentacion
                     LblDatosNoEncontrados.Visible = true;
 
                 }
+                MostrarGuardarCancelar(false);
+                lblUsuario.Text = Usuario.Nombre +" "+ Usuario.Apellido;
+
 
             }
             catch (Exception ex)
@@ -55,7 +58,7 @@ namespace SistemaVentas.Presentacion
                 MessageBox.Show(ex.Message + ex.StackTrace);
             }
 
-            MostrarGuardarCancelar(false);
+          
 
         }
         public void MostrarGuardarCancelar(bool b)
